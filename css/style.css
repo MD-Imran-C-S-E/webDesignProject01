@@ -1,0 +1,333 @@
+/* comonStyle cssCode stertHear */
+:root {
+    --font-family: "Inter", sans-serif;
+    --second-family: "Montserrat", sans-serif;
+    --third-family: "Poppins", sans-serif;
+    --font3: "Oleo Script", sans-serif;
+    --font4: "Raleway", sans-serif;
+    --but-text-color: #fff;
+    --hoverbut-text-color: #fff;
+    --btn-border:1px solid #4fc3f7;
+    --btn-hover-border : 1px solid #fff;
+    /* --but-text-color: #484e53; */
+    --text-color: #c1c1c1;
+    --text-colorP: #e1e1e1;
+    /* --text-color: #484e53; */
+    --background: #1a1a1a;
+    /* --background-light : #e0e8f6; */
+    --text-gradient-color: linear-gradient(91deg, #4fc3f7 0%, #fff 100%);
+
+    /* --text-gradient-color: linear-gradient(91deg, #4fc3f7 0%, #484e53 100%); */
+    --iconBoxBG-color : linear-gradient(137deg, rgba(28, 28, 28, 0.5) 0%, #050505 100%);
+    --boxBorde : 1px solid #2b2b2b;
+    --iconbg-color: #f5f8ff;
+    --formBtn-text-color : #000 ; 
+
+  }
+*{
+  scroll-behavior: smooth;
+}
+a
+{
+    text-decoration: none;
+}
+ul,li
+{
+    list-style: none;
+    display: inline-block;
+}
+body
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-family);
+    background-color: var(--background);
+}
+.bntPrimary{
+    border: var(--btn-border);
+    border-radius: 75px;
+    padding: 10px;
+    width: 187px;
+    height: 55px;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--but-text-color);
+    background-color: transparent;
+    transition: 0.5s;
+}
+.bntPrimary:hover{
+    background: #484e53;
+    border: var(--btn-hover-border);
+    color: var(--hoverbut-text-color);
+}
+
+#message{
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    position: fixed;
+    display: none;
+    color: red;
+    animation: moveAnimation 0.8s linear;
+}
+@keyframes moveAnimation {
+    0%{
+        transform: translate( 0 , 50px);
+    }100%{
+        transform: translate( 0, 0);
+    }
+}
+/* comonStyle cssCode endHear */
+
+
+/* header {
+    height: 100px;
+    z-index: 1000;
+    }
+    
+    #aboutSection {
+    padding-top: 30px;
+    scroll-margin-top: 10px;
+    } */
+    
+/* headerPartStyle cssCode stertHear */
+header{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    background-color: var(--background);
+    z-index: 1000;
+}
+header .navbar .logo{
+    font-weight: 400;
+    font-size: 32px;
+}
+header .mode img{
+    height: 25px;
+    width: 25px;
+    margin-left: 80px;
+}
+header .bntPrimary{
+    border-radius: 9px;
+}
+header .navbar ul li a{
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--text-color);
+    margin: 0 25px 0;
+    transition: 0.5s;
+}
+header .navbar ul li a:hover{
+    color: #4fc3f7;
+}
+/* headerPartStyle cssCode endHear */
+/* homePartStyle cssCode stertHear */
+#homeSection,
+#aboutSection{
+    margin-bottom: 160px;
+    
+}
+#homeSection,
+#aboutSection,
+#servicesSection,
+#projectSection,
+#contactSection
+{
+    padding-top: 30px;
+    scroll-margin-top: 60px;
+}
+#homeSection h2,
+#aboutSection h2,
+#servicesSection h2,
+#projectSection h2,
+#contactSection h2{
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 63px;
+    letter-spacing: -0.06em;
+    color: var(--text-color);
+}
+#homeSection h6 samp{
+    font-family: var(--third-family);
+    font-weight: 600;
+    font-size: 26px;
+    background: var(--text-gradient-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#homeSection p,
+#aboutSection p{
+    font-family: var(--third-family);
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 158%;
+    text-align: center;
+    color: var(--text-color);
+}
+/* homePartStyle cssCode endHear */
+
+/* aboutPartStyle cssCode stertHear */
+#aboutSection .title,
+#servicesSection .title,
+#projectSection .title,
+#contactSection .title{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    background: var(--text-gradient-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -16px;
+}
+
+/* aboutPartStyle cssCode endHear */
+/* servicesPart cssCode stertHear */
+#servicesSection{
+    margin: 160px 0px;
+}
+#servicesSection .iconBox{
+    border: var(--boxBorde);
+    border-radius: 10px;
+    width: 100%;
+    /* max-width: 269px; */
+    background: var(--iconBoxBG-color);
+    padding-top: 28px;
+    padding-left: 26px;
+    padding-bottom: 24px;
+    padding-right: 12px;
+}
+#servicesSection .iconBox .icon{
+    border-radius: 9px;
+    padding: 8px 10px 10px; 
+    width: 44px;
+    height: 44px;
+    background: var(--iconbg-color);
+}
+#servicesSection .iconBox h3,
+#projectSection .textBody h3{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 120%;
+    color: var(--text-color);
+
+}
+#servicesSection .iconBox p,
+#projectSection .textBody p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--text-colorP);
+}
+/* servicesPart cssCode endHear */
+
+/* projectPart cssCode stertHear */
+
+#projectSection .project .textBody h3{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--text-color);
+}
+#projectSection .project .textBody p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--text-colorP);
+}
+#projectSection .project .textBody .logo{
+    margin-left: auto;
+}
+
+#projectSection .item {
+    position:relative;
+    animation:animatebottom 0.6s
+}
+@keyframes animatebottom
+{
+    from {
+        bottom:-300px;
+        opacity:0
+    } to{
+        bottom:0;
+        opacity:1
+    }
+}
+
+/* projectPart cssCode endHear */
+/* contactPart cssCode stertHear */
+#contactSection form label{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--but-text-color);
+}
+#contactSection form input,
+#contactSection form select,
+#contactSection form textarea{
+    border: var(--btn-border);
+    border-radius: 10px;
+    width: 100%;
+    outline: none;
+    padding: 12px 32px;
+    background-color: transparent;
+}
+#contactSection form input::placeholder{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #8987a1;
+}
+#contactSection form .bntPrimary{
+    border: 1px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--but-text-color);
+    color: var(--formBtn-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+/* contactPart cssCode endHear */
+/* footerPart cssCode stertHear */
+#footerSection {
+    margin-top: 200px;
+}
+#footerSection h2{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 63px;
+    line-height: 106%;
+    letter-spacing: 0.07em;
+    text-transform: capitalize;
+    color: var(--but-text-color);
+}
+#footerSection .bntPrimary {
+    border-radius: 10px;
+}
+#footerSection hr {
+    border: 1px solid #484e53;
+}
+#footerSection p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 154%;
+    letter-spacing: 0.03em;
+    text-transform: lowercase;
+    color: var(--but-text-color);
+}
+#footerSection ul li {
+    margin: 0 10px;
+
+}
+/* footerPart cssCode endHear */
